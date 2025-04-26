@@ -3,6 +3,64 @@ Project on Data Science that helps user to determine the Rate of a movie by feat
 
 _________________________________________________________________________________________
 
+STEPS TO RUN MY PROJECT
+
+Step 1: Setting up the Environment
+
+Open Google Colab: Navigate to Google Colab in your web browser.
+Create a New Notebook: Create a new Colab notebook.
+Install Libraries: Run the following code snippet in a code cell to install the necessary libraries:
+!pip install pandas numpy seaborn matplotlib scikit-learn tensorflow
+Use code with caution
+Step 2: Importing Libraries
+
+Import Libraries: Add the following code cell to your notebook to import the required libraries:
+import pandas as pd
+    import numpy as np
+    import seaborn as sns
+    import matplotlib.pyplot as plt
+    from sklearn.model_selection import train_test_split
+    from sklearn.preprocessing import LabelEncoder, StandardScaler
+    from tensorflow.keras.models import Sequential
+    from tensorflow.keras.layers import Dense
+    from tensorflow.keras.optimizers import Adam
+    from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+Use code with caution
+Step 3: Data Loading and Preprocessing
+
+Upload Data: Upload the "IMDb Movies India.csv" file to your Colab environment. You can use the file upload feature in the Colab interface.
+Load Data: Load the data into a pandas DataFrame:
+file_path = "/content/IMDb Movies India.csv"  # Update with your file path
+    df = pd.read_csv(file_path, encoding='ISO-8859-1')
+Use code with caution
+Data Cleaning: Execute the code cells provided in the project for data cleaning, handling missing values, and converting data types. This includes removing duplicates, dropping irrelevant columns, and handling missing values.
+Feature Encoding: Encode categorical features (Genre, Director, Actors) using Label Encoding.
+Step 4: Model Training
+
+Data Splitting: Split the data into training and testing sets using train_test_split.
+Feature Scaling: Scale numerical features using StandardScaler.
+Model Building: Define the neural network model using Sequential and Dense layers from Keras.
+Model Compilation: Compile the model specifying the optimizer, loss function, and evaluation metrics.
+Model Training: Train the model using model.fit with the training data.
+Step 5: Model Evaluation and Prediction
+
+Model Evaluation: Evaluate the model's performance on the test data using metrics like MAE, MSE, RMSE, and R² score.
+Prediction: Make predictions on new data using model.predict.
+Visualization: Visualize model performance using plots like training loss curves, actual vs. predicted ratings, and prediction errors.
+Step 6 (Optional): Interactive Prediction
+
+Run the widget code: Run the code cells that create and display the interactive widgets.
+Input Values: Use the widgets to input movie details and click "Predict" to get the predicted rating.
+Important Notes
+
+Make sure the "IMDb Movies India.csv" file is uploaded to your Colab environment.
+Replace placeholders like file paths with your actual values.
+The steps and code snippets provided here assume you have the complete project code available in your Colab notebook.
+
+
+
+_________________________________________________________________________________________
+
 
 Functionality
 
